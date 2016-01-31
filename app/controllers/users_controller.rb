@@ -4,7 +4,6 @@ class UsersController < ApplicationController
 	end
 
 	def create 
-	  debugger
 	  @user = User.new(user_params)
 	  if @user.save
 	    flash[:success] = "Welcome to the Hitech Blog #{@user.username}"
@@ -26,6 +25,10 @@ class UsersController < ApplicationController
 	  else
 	    render 'edit'
 	  end
+	end
+
+	def show
+	  @user = User.find(params[:id])
 	end
 
 	private
