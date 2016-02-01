@@ -23545,3 +23545,39 @@ Processing by UsersController#show as HTML
   Rendered layouts/_messages.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (1.0ms)
 Completed 200 OK in 501ms (Views: 496.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for ::1 at 2016-02-01 20:36:02 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  Rendered users/_form.html.erb (7.0ms)
+  Rendered users/new.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 214ms (Views: 213.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-02-01 20:36:14 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IJGp57RK32OesW+xnK8JPmHkSVJaZlPDrL+0/QyC8NLwRmDPCIrzzaZKvFmPcP7zC6lnEXBpS2vjhg9KvHYW7w==", "user"=>{"username"=>"ben", "email"=>"ben@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('ben') LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('ben@gmail.com') LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "ben"], ["email", "ben@gmail.com"], ["password_digest", "$2a$10$HhQfr2WYdzWYmnlnc5VZCeHLjqrFnVDC0LOI0AZqsE6d7XhAhmLXC"], ["created_at", "2016-02-01 13:36:15.223848"], ["updated_at", "2016-02-01 13:36:15.223848"]]
+  [1m[35m (95.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 365ms (ActiveRecord: 97.1ms)
+
+
+Started GET "/articles" for ::1 at 2016-02-01 20:36:15 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered articles/_article.html.erb (11.8ms)
+  Rendered articles/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 217ms (Views: 216.2ms | ActiveRecord: 0.0ms)
