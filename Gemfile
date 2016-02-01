@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 
+# Use will_paginate for pagination
+gem 'will_paginate', '3.0.7'
+
 gem 'bcrypt', '~> 3.1.7'
 # Use SCSS for stylesheets
+gem 'bootstrap-will_paginate', '0.0.10'
 gem 'bootstrap-sass'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'sass-rails', '~> 5.0'
