@@ -35522,3 +35522,323 @@ Processing by CategoriesController#show as HTML
   Rendered layouts/_messages.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 235ms (Views: 234.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/6" for ::1 at 2016-02-07 22:21:39 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendered categories/show.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 921ms (Views: 893.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-16cc34859398642125a469601cf4983e30ef02d6c9fcf58949cf7b0fe64bbadd.css?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/assets/application.self-ff53b6dfc1f30d348bfeedd6e052bba068a052e01ded699aa544d32242090a1f.js?body=1" for ::1 at 2016-02-07 22:21:40 +0700
+
+
+Started GET "/categories/new" for ::1 at 2016-02-07 22:21:45 +0700
+Processing by CategoriesController#new as HTML
+Redirected to http://localhost:3000/categories
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-02-07 22:21:45 +0700
+Processing by CategoriesController#new as HTML
+Redirected to http://localhost:3000/categories
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2016-02-07 22:21:45 +0700
+Processing by CategoriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" LIMIT 5 OFFSET 0[0m
+  Rendered categories/index.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 228ms (Views: 220.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for ::1 at 2016-02-07 22:22:29 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (53.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 310ms (Views: 309.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-02-07 22:22:35 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6+oGqDUpo6nhGMIKuje/OGRG1VdRf+DZqNMICS4eHktY884o6lTdp2ZCwqGBGyVOCubORu0dET74m3CtbmpPMw==", "session"=>{"email"=>"trantuanphuong19941994@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "trantuanphuong19941994@gmail.com"]]
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 187ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/5" for ::1 at 2016-02-07 22:22:35 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?  [["user_id", 5]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."user_id" = ? LIMIT 5 OFFSET 0[0m  [["user_id", 5]]
+  Rendered articles/_article.html.erb (5.0ms)
+  Rendered users/show.html.erb within layouts/application (29.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_navbar.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 436ms (Views: 313.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-02-07 22:22:42 +0700
+Processing by CategoriesController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered shared/_errors.html.erb (6.0ms)
+  Rendered categories/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 236ms (Views: 229.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/categories" for ::1 at 2016-02-07 22:22:49 +0700
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/2FxQ7bBhVGehCFO0HW8g4W6AuYgVEqY5KUyjZTe0QNMeLnDabz7XxneIeXrWSb16xoZ95w2u3+07Uop1KqAew==", "category"=>{"name"=>"lifestyle"}, "commit"=>"Create Category"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCategory Exists (0.0ms)[0m  SELECT  1 AS one FROM "categories" WHERE "categories"."name" = 'lifestyle' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "lifestyle"], ["created_at", "2016-02-07 15:22:49.991099"], ["updated_at", "2016-02-07 15:22:49.991099"]]
+  [1m[35m (116.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 163ms (ActiveRecord: 117.2ms)
+
+
+Started GET "/categories" for ::1 at 2016-02-07 22:22:50 +0700
+Processing by CategoriesController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories" LIMIT 5 OFFSET 0
+  Rendered categories/index.html.erb within layouts/application (22.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 271ms (Views: 265.9ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2016-02-07 22:22:56 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4nGnffv1+Y+urDasamjvkrRzKbYubL5VLbDrCBkdc0lRaG/9JIiHgSn2NgdRRHXk2tMyp5IOT7J9+JOsWWkiMQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 22:22:56 +0700
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 212ms (Views: 212.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-02-07 22:22:57 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 205ms (Views: 204.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-02-07 22:23:01 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ULP8tGHgUFQ6pFV7+cfbL+psrP8AC9AsGx+kBLXGWbrjqjQ0vp0uWr3+VdDC60FZhMy37rxpIctLV9yg9bIIwg==", "session"=>{"email"=>"trantuanphuong031294@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "trantuanphuong031294@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 256ms (Views: 252.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-02-07 22:23:07 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kqR+e04VqC8g9m45UWZ1nYfz083jT5VTXauNWseTi4khvbb7kWjWIaesbpJqSu/r6VPI3F8tZLQN4/X+h+fa8Q==", "session"=>{"email"=>"trantuanphuong031294@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "trantuanphuong031294@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 200ms (Views: 196.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-02-07 22:23:13 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jqSzEk69kHahu1yFvgNXQF4RUv3RpYovtV8sEbe2mgo9vXuSkcDueCbhXC6FL802MLFJ7G3He8jlF1S198LLcg==", "session"=>{"email"=>"trantuanphuong031294@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "trantuanphuong031294@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 208ms (Views: 205.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-02-07 22:23:18 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RMtrJuCbgwsf4QrmPpFbSuOo/5UbYgkFtXsY/WfUGz730qOmP+b9BZi7Ck0FvcE8jQjkhKcA+OLlM2BZJ6BKRg==", "session"=>{"email"=>"trantuanphuong031294@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "trantuanphuong031294@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 203ms (Views: 199.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2016-02-07 22:23:26 +0700
+Processing by UsersController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 5 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?  [["user_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 6]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?  [["user_id", 7]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 9]]
+  Rendered users/index.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 263ms (Views: 259.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/signup" for ::1 at 2016-02-07 22:23:30 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  Rendered users/_form.html.erb (8.0ms)
+  Rendered users/new.html.erb within layouts/application (49.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 276ms (Views: 274.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-02-07 22:24:00 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KNa8mLuyhkZnVsTOn8glAGLL9a6kjoBZ+Uwqd88R8lKbz3QYZM/4SOAMxGWk5L92DGvuvxjscb6pBFLTj2WjKg==", "user"=>{"username"=>"phuong-cse-iu", "email"=>"trantuanphuong031294@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('phuong-cse-iu') LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('trantuanphuong031294@gmail.com') LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "phuong-cse-iu"], ["email", "trantuanphuong031294@gmail.com"], ["password_digest", "$2a$10$6ou464xRztAeq82wNzybSummThc1sxO0Sahep1vXYC1cOxu5uU.E6"], ["created_at", "2016-02-07 15:24:00.761287"], ["updated_at", "2016-02-07 15:24:00.761287"]]
+  [1m[35m (70.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 221ms (ActiveRecord: 72.0ms)
+
+
+Started GET "/users/10" for ::1 at 2016-02-07 22:24:00 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?  [["user_id", 10]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."user_id" = ? LIMIT 5 OFFSET 0[0m  [["user_id", 10]]
+  Rendered articles/_article.html.erb (2.0ms)
+  Rendered users/show.html.erb within layouts/application (7.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 226ms (Views: 221.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-02-07 22:24:07 +0700
+Processing by CategoriesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Redirected to http://localhost:3000/categories
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2016-02-07 22:24:08 +0700
+Processing by CategoriesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories" LIMIT 5 OFFSET 0[0m
+  Rendered categories/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 215ms (Views: 214.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2016-02-07 22:24:21 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xRDE2imEVWlY+pogy5/+DP8Sb505osEGAc5tcW184Pp2CQxa9vkrZ9+gmovws2R6kbJ0jIXAMOFRhhXVLQixgg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 22:24:21 +0700
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 225ms (Views: 225.2ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticleCategories (20160208090504)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (26.3ms)[0m  [1mCREATE TABLE "article_categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "article_id" integer, "category_id" integer) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160208090504"]]
+  [1m[36m (72.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mArticleCategory Load (4.0ms)[0m  [1mSELECT "article_categories".* FROM "article_categories"[0m

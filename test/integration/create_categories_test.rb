@@ -1,10 +1,14 @@
 require 'test_helper'
 
 class CreateCategoriesTest < ActionDispatch::IntegrationTest
-  
+  def setup
+    @user = User.create(username: "phuong", email: "phuong@example.com", password: "password", admin: true)
+  end
+
   test "get new category form and create category" do 
   	#display new form for creating category
     get new_category_path
+    session[:user_id] = @user.id
     #ensure this path(form) happens
     assert_template 'categories/new'
     #able to create category
@@ -21,6 +25,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
   	#display new form for creating category
     get new_category_path
     #ensure this path happens
+    session[:user_id] = @user.id
     assert_template 'categories/new'
     #actually able to create category. This test should return false, then it is passed
     assert_no_difference 'Category.count' do 

@@ -12,6 +12,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
     get categories_path
     #ensure the template of index page
     assert_template 'categories/index'
+    # text: category name should display
     assert_select "a[href=?]", category_path(@category), text: @category.name
     assert_select "a[href=?]", category_path(@category2), text: @category2.name
   end
